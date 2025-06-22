@@ -1,0 +1,257 @@
+:root {
+  --font-primary: "Nunito", sans-serif;
+  --font-secondary: "ABeeZee", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: var(--font-primary);
+}
+
+.wrapper {
+  position: relative;
+  z-index: 0;
+}
+
+.wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../assets/images/Line1.png") no-repeat center/cover,
+    url("../assets/images/Line2.png") no-repeat center/cover,
+    url("../assets/images/Line3.png") no-repeat center/cover,
+    url("../assets/images/Line4.png") no-repeat center/cover;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 1;
+}
+
+.landing-page {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  min-height: 100vh;
+}
+
+.landing-left {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-left main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 50px 50px 50px;
+}
+
+.landing-right {
+  flex: 1;
+  background: #f1f6fe url("../assets/images/bg-vector.svg") no-repeat
+    center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-avatars {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 25px;
+  justify-items: center;
+}
+
+.avatar {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-section {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.header-logo {
+  width: 70px;
+  height: 70px;
+}
+
+.header-title {
+  width: 100%;
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 18px;
+  padding-top: 10px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #1a1a1a;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  color: #838383;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.nav-item {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.section-one {
+  margin-top: 30px;
+}
+
+.main-heading-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.main-heading {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 42.5px;
+  text-transform: uppercase;
+}
+
+.main-subheading {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 13px;
+  vertical-align: middle;
+  color: #2d3134;
+}
+
+.circle-icon {
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: url("../assets/images/circle.png") no-repeat center center;
+  background-size: cover;
+}
+
+.circle-icon img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.section-two {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.info-box {
+  width: 120px;
+}
+
+.info-box-number {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 24px;
+  color: #000000;
+}
+
+.info-box-label {
+  font-family: var(--font-primary);
+  color: #202020;
+  font-size: 14px;
+}
+
+.info-box-ellipse {
+  padding-left: 40px;
+}
+
+.ellipse {
+  margin-left: -40px;
+  width: 75px;
+}
+
+.section-three {
+  display: flex;
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.cta-button {
+  border-radius: 60.2px;
+  border: none;
+  color: white;
+  padding: 16px 50px;
+  background-color: #2f584e;
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.cta-journey {
+  width: 180px;
+}
+
+.footer {
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  color: #ffffff;
+  background-color: #ff9257;
+}
+
+.footer-stat {
+  border-left: 4px solid #f7be2c;
+  padding-left: 20px;
+}
+
+.stat-number {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 34px;
+}
+
+.stat-label {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  font-size: 14px;
+}
